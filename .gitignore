@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+/.vs
+/x64
+/LeetCodeCPP/x64
+
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
