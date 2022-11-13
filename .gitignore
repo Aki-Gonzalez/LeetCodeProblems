@@ -31,9 +31,9 @@
 *.out
 *.app
 
-/.vs
-/x64
-/LeetCodeCPP/x64
+LeetCodeCPP/.vs
+LeetCodeCPP/x64
+LeetCodeCPP/LeetCodeCPP/x64
 
 *.sln
 *.vcxproj
