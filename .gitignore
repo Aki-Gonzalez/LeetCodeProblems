@@ -39,3 +39,10 @@
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
+
+# C#
+*.v2
+*.suo
+LeetCodeCSharp/.vs/
+*.csproj
+LeetCodeCSharp/LeetCodeCSharp/obj
