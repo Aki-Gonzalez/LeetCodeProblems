@@ -46,3 +46,5 @@ LeetCodeCPP/LeetCodeCPP/x64
 LeetCodeCSharp/.vs/
 *.csproj
 LeetCodeCSharp/LeetCodeCSharp/obj
+*.json
+*.pdb
