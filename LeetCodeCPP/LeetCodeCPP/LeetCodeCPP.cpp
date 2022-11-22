@@ -2,57 +2,33 @@
 
 #include <iostream>
 
-#include "LongestCommonPrefix.h"
+#include "ContainerWithMostWater.h"
 
 int main()
 {
 	Solution s;
-	std::vector<std::string> first = { "flower", "flow", "flight" };
-	std::vector<std::string> second = { "a" };
-	std::vector<std::string> third = { "dog", "done", "dug" };
-	std::vector<std::string> fourth = { "dog", "", "dug" };
-	std::vector<std::string> fifth = { "aaa", "aa", "aaa" };
-	std::vector<std::string> sixth = { "c","acc","ccc" };
-	std::vector<std::string> seventh = { "ab", "a" };
-	std::vector<std::string> eight = { "reflower","flow","flight" };
-	std::vector<std::string> ninth = { "cir","car" };
 
-	auto printVector = [](std::vector<std::string> v)
+	auto PrintResult = [](Solution& s, std::vector<int>& v)
 	{
-		std::cout << "[";
-		for (auto& str : v)
+		std::cout << "{ ";
+		for (const int& i : v)
 		{
-			std::cout << str << ", ";
+			std::cout << i << ", ";
 		}
-		std::cout << "]  ";
+		std::cout << "} => MaxArea = " << s.maxArea(v) << std::endl;
 	};
-
-	printVector(first); 
-	std::cout << s.longestCommonPrefix(first) << std::endl;
-
-	printVector(second); 
-	std::cout << s.longestCommonPrefix(second) << std::endl;
-
-	printVector(third); 
-	std::cout << s.longestCommonPrefix(third) << std::endl;
-
-	printVector(fourth); 
-	std::cout << s.longestCommonPrefix(fourth) << std::endl;
-
-	printVector(fifth); 
-	std::cout << s.longestCommonPrefix(fifth) << std::endl;
-
-	printVector(sixth); 
-	std::cout << s.longestCommonPrefix(sixth) << std::endl;
-
-	printVector(seventh); 
-	std::cout << s.longestCommonPrefix(seventh) << std::endl;
-
-	printVector(eight); 
-	std::cout << s.longestCommonPrefix(eight) << std::endl;
-
-	printVector(ninth); 
-	std::cout << s.longestCommonPrefix(ninth) << std::endl;
+	std::vector<int> height1 = { 1,8,6,2,5,4,8,3,7 };//49
+	std::vector<int> height2 = { 1,1 };//1
+	std::vector<int> height3 = { 8,1,9,6,7,8,7 };//42
+	std::vector<int> height4 = { 1,1000,1000,6,2,5,4,8,3,7 };//1000
+	std::vector<int> height5 = { 1,2,1 };//2
+	std::vector<int> height6 = { 2,3,4,5,18,17,6 };//17
+	PrintResult(s, height1);
+	PrintResult(s, height2);
+	PrintResult(s, height3);
+	PrintResult(s, height4);
+	PrintResult(s, height5);
+	PrintResult(s, height6);
 
 	system("pause");
 }
