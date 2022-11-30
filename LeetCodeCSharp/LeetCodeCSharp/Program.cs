@@ -1,27 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using LeetCodeCSharp;
-RemoveNthNodeFromEndofList.ListNode node5 = new RemoveNthNodeFromEndofList.ListNode(5, null);
-RemoveNthNodeFromEndofList.ListNode node4 = new RemoveNthNodeFromEndofList.ListNode(4, node5);
-RemoveNthNodeFromEndofList.ListNode node3 = new RemoveNthNodeFromEndofList.ListNode(3, node4);
-RemoveNthNodeFromEndofList.ListNode node2 = new RemoveNthNodeFromEndofList.ListNode(2, node3);
-RemoveNthNodeFromEndofList.ListNode node1 = new RemoveNthNodeFromEndofList.ListNode(1, node2);
 
-void PrintNodeList(RemoveNthNodeFromEndofList.ListNode head)
-{
-    RemoveNthNodeFromEndofList.ListNode node = head;
-    do
-    {
-        Console.Write(node.val.ToString() + ", ");
-        node = node.next;
-    } while (node != null);
-    Console.WriteLine();
-}
+//string a = "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101";
+//string b = "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011";
 
-PrintNodeList(node1);
-RemoveNthNodeFromEndofList.RemoveNthFromEnd(node1, 2);
-PrintNodeList(node1);
-RemoveNthNodeFromEndofList.RemoveNthFromEnd(node1, 4);
-PrintNodeList(node1);
+string a = "1000";
+string b = "1010";
+//11010
+//10010
+Console.WriteLine(AddBinary.Solution(a, b));
 
 
